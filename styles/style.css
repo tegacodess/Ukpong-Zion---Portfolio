@@ -18,6 +18,9 @@ h1, h2, h3, p{
     text-align: center;
 }
 
+li{
+  font-family: "Lato", sans-serif;
+}
 a{
     color:#ffffff
     
@@ -137,7 +140,7 @@ span{
 }
 
 .home{
-    font-family:cursive; 
+    font-family: "Lato", sans-serif;
     color: #ffffff;
     text-align: center;
 }
@@ -180,6 +183,7 @@ span{
 
 #skills li{
   color:#ffffff;
+  
 }
 
 
