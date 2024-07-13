@@ -1,0 +1,256 @@
+/* Small Devices (landscape, 576px and upward)  */
+@media screen and (min-width: 576px) {
+  
+    /* General */
+    .hero, #about, #skills, #projects, #resume, #contact {
+      margin: 40px;
+      
+    }
+
+    p, li{
+      font-size: 20px;
+    }
+    /* Nav Bar */
+      .topnav{
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          box-sizing: border-box;
+      }
+      .topnav #myLinks {
+          display: flex; /* Make #myLinks a flex container */
+          flex-direction: row;
+          justify-content: space-evenly;
+          width:65%;
+      }
+  
+      .topnav a,
+      .topnav #myLinks a {
+          font-size: 16px;
+          padding: 14px 10px; 
+          color: white; 
+          text-decoration: none; 
+      }
+
+      .topnav a.icon {
+          display: none; /* Hide the hamburger menu icon */
+      }
+
+      .home{
+          font-family:cursive; 
+          color: #ffffff;
+          font-size: 24px;
+          text-align: center;
+          padding-left: 3px;
+      }
+  
+      .contact-btn{
+            border-radius: 20px;
+          background-color: #ca895f;
+          color: white;
+          text-decoration: none;
+        
+      }
+
+      .zion{
+          border-radius: 300px;
+      }
+  
+       /* Hero */
+    .hero-main{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+     
+    #about{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .individual-project > div {
+      /* Adjust the container if necessary, for example: */
+      padding: 20px;
+      margin: 20px auto;
+      padding-bottom: 40%; /* Adjust based on the desired aspect ratio */
+    }
+  
+
+
+}    
+
+  /* Medium Devices (Tablets, 768px upward )*/
+  @media screen and (min-width: 768px) {
+  
+    /* General */
+    .hero, #about, #skills, #projects, #resume, #contact, p {
+      font-size: 18px;           
+    }
+  
+    .other_image{
+      width: 20%; 
+      height:5%;
+      margin:20px; 
+      border-radius: 200px;
+    }
+  
+    /* Nav Bar */
+    .topnav a,
+    .topnav #myLinks a {
+      font-size: 20px;        
+    }
+    
+    .home{
+      font-size: 30px;      
+    }
+  
+     
+    /* About */
+    #about h2{
+      border: 5px solid white;
+      padding:40px;
+      border-radius: 20px;
+    }
+
+    #about p{
+      margin: 25px 40px;
+      margin-left: 75px;
+    }
+  
+    /* Skills */
+    #skills{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .skills-head {
+      border:5px solid white;
+      border-radius: 20px;
+    }
+
+    .skills-head h2, .projects-head h2{
+        flex-grow: 0;
+    }
+
+    
+    .skills-list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto 40px;
+    }
+
+
+    /* Projects */
+    .projects-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .individual-project{
+      border-radius: 15px;
+    }
+
+
+  .flex-768{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+  /* Large Devices (Desktops, 820px and upwards) */
+@media screen and (min-width: 1024px) {
+
+  p, li, #myLinks {
+    font-size: 20px;
+  
+  }
+
+  #about {
+    padding: 80px;
+  }
+
+  #projects, #skills{
+    padding:70px;
+  }
+  #about p{
+    margin: 25px 40px;
+    /* margin-left: 40px; */
+  }
+  #skills{
+    flex-direction: row-reverse;
+  }
+
+  
+  .skills-head {
+    border:0;
+    border-radius: 0;
+  }
+
+  .skills-list{
+    border:5px solid white;
+      border-radius: 20px;
+      padding: 50px;
+  }
+  .skills-head h2{
+    box-sizing: content-box;
+    padding: auto 0;    
+  }
+
+}
+  
+  
+  /* Extra Large Devices (Large desktops, 1200px and upwards */
+
+  @media screen and (min-width:1200px) {
+    .zion{
+      border-radius: 400px;
+  }
+  .topnav{
+    padding-right: 8px;
+  }
+
+  .topnav a{
+    font-size: 24px;
+  }
+ 
+  .topnav a .contact-btn{
+    padding: 25px 15px;
+  }
+  #myLinks a{
+    font-size: 22px;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+
+  .skills-list{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.projects-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.individual-project{
+  border-radius: 15px;
+  width:400px;
+  /* height: 500px; */
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap:20px;
+}
+
+  }
