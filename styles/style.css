@@ -1,45 +1,44 @@
- 
- 
- /* General styling */
-*{
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+/* General styling */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: #152136;
-}
-h1, h2, h3, p{
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    margin: 10px;
-    text-align: center;
+body {
+  background-color: #152136;
 }
 
-li{
+h1, h2, h3, p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  margin: 5px;
+  text-align: center;
+}
+
+li {
   font-family: "Lato", sans-serif;
 }
-a{
-    color:#ffffff
-    
+
+a {
+  color: #ffffff;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
-  color:#ca895f
-}
- 
-span{
   color: #ca895f;
 }
 
-.other_image{
-  width: 40%; 
-  height:10%;
-  margin:20px; 
+span {
+  color: #ca895f;
+}
+
+.other_image {
+  width: 30%; 
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; 
   border-radius: 20px;
 }
 
@@ -54,7 +53,7 @@ span{
   background-color: #ca895f; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 10px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
 }
 
@@ -62,182 +61,243 @@ span{
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-
-.skills-head, .projects-head{
+.skills-head, .projects-head {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-/* Nav Bar*/
+/* Nav Bar */
 .topnav {
-    overflow: hidden;
-    background-color:  #152136;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:10px;
-  }
-  #myLinks {
-    display: none;
-     width: 100%;
-     flex-direction: column;
+  overflow: hidden;
+  background-color: #152136;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
 }
 
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-
-  .topnav a.icon {
-    display: flex;
-    justify-content: center; /* Center the lines horizontally */
-    align-items: center; /* Center the lines vertically */
-    position: relative;
-    right: 0;
-    top: 0;
-    width: 40px;
-    height: 30px;
-    cursor: pointer;
-    border: 3px solid white;
-    border-radius: 7px;
-    margin-right: 10px;
-  }
-  
-  .topnav a.icon::before,
-  .topnav a.icon::after {
-    content: "";
-    background-color: white; /* Line color */
-    display: block;
-    width: 20px; /* width of lines */
-    height: 2px; /* Line thickness */
-    position: absolute;
-  }
-  
-  .topnav a.icon::before {
-    top: 8px; /* Adjust distance from the center */
-  }
-  
-  .topnav a.icon::after {
-    bottom: 8px; /* Adjust distance from the center */
-  }
-  
-  /* middle line */
-  .topnav a.icon {
-    content: ""; 
-    height: 2px; /* Line thickness */
-    width: 5px; /* Adjust width of line */
-    position: absolute;
-    top: 14px; /* Adjust to vertically center the line */
-  }
-  
-  #myLinks, .topnav .home {
-    transition: all 0.3s ease; 
+#myLinks {
+  display: none;
+  width: 100%;
+  flex-direction: column;
 }
 
-.home{
-    font-family: "Lato", sans-serif;
-    color: #ffffff;
-    text-align: center;
+.topnav a {
+  color: white;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: flex;
+  justify-content: center; /* Center the lines horizontally */
+  align-items: center; /* Center the lines vertically */
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 7px;
+  margin-right: 5px;
+}
+
+.topnav a.icon::before,
+.topnav a.icon::after {
+  content: "";
+  background-color: white; /* Line color */
+  display: block;
+  width: 20px; /* width of lines */
+  height: 2px; /* Line thickness */
+  position: absolute;
+}
+
+.topnav a.icon::before {
+  top: 8px; /* Adjust distance from the center */
+}
+
+.topnav a.icon::after {
+  bottom: 8px; /* Adjust distance from the center */
+}
+
+/* middle line */
+.topnav a.icon {
+  content: ""; 
+  height: 2px; /* Line thickness */
+  width: 5px; /* Adjust width of line */
+  position: absolute;
+  top: 14px; /* Adjust to vertically center the line */
+}
+
+#myLinks, .topnav .home {
+  transition: all 0.3s ease; 
+}
+
+.home {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  text-align: center;
 }
 
 /* Hero */
-.hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
 }
 
-.zion{ 
+.zion { 
   margin: 20px;
-  width: 80%;
-  border-radius: 200px;
+  width: 100%; /* Use 100% for responsive images */
+  max-width: 600px; /* Optional max width */
+  border-radius: 20px;
   border: 5px solid;
 }
 
-/* About */
-#about{
-  padding: 40px 0;
+.hero p {
+  width: 100%; /* Use 100% for responsive text */
 }
 
-#about p{
-  margin:25px 10px;
+/* About */
+#about {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about p {
+  margin: 25px 10px;
+
+}
+
+#about div {
+  color: white;
+  margin: 20px;
+  width: 100%; /* Use 100% for responsive layout */
+  max-width: 800px; /* Optional max width */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Skills */
+#skills {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
 }
 
 /* Skills & Projects */
-
-.skills-head h2, .projects-head h2{
+.skills-head h2, .projects-head h2 {
   flex-grow: 1;
   padding: 50px 0;
   padding-left: 0;
 }
 
-
-#skills li{
-  color:#ffffff;
-  
+#skills li {
+  color: #ffffff;
 }
-
 
 /* Projects */
-#projects{
-  padding: 40px 0;
+#projects {
+  padding: 20px 0;
+  position: relative;
 }
 
-#projects h2{
+#projects p {
+  width: auto;
+}
+
+#projects h2 {
   color: #ca895f;
 }
 
-.projects-container{
+.projects-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Enable snap scrolling */
+  padding: 20px;
+  gap: 20px;
+  margin-left:65px;
+  margin-right: 65px;
 }
 
-.individual-project{
+.individual-project {
+  flex: 0 0 calc(33.33% - 20px); /* Each project takes up 1/3 of the container width minus gap */
+  scroll-snap-align: start; /* Snap alignment */
   border: 5px solid white;
-  border-radius: 20px;
   color: white;
-  margin:30px 15px;
   text-align: center;
+  margin: 15px;
+  padding: 10px;
+  height: 80%; 
+  border-radius: 25px;
 }
 
+.individual-project:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  margin: 0 calc(10px);
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
 
 /* Resume */
-#resume{
+#resume {
   padding: 40px 0;
 }
 
 /* Contact */
-#contact{
+#contact {
   padding: 40px 0;
   text-align: center;
 }
 
-.contact{
+.contact {
   display: flex;
   color: #ffffff;
-  /* justify-content: space-evenly; */
+  justify-content: center;
 }
 
-.main-contact{
+.main-contact {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
-.main-contact ul{
-  list-style-type:square; 
- text-align: left;
-
+.main-contact ul {
+  list-style-type: square; 
+  text-align: left;
 }
 
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .hero, #about, #skills, #projects, #resume, #contact {
+      margin: 20px; /* Reduce margin on smaller screens */
+  }
+
+  p, li {
+      font-size: 1rem; /* Smaller font size */
+  }
+
+  .individual-project {
+      flex: 0 0 100%; /* Full width on smaller screens */
+      margin-right: 0; /* Remove right margin */
+  }
+  
+
+  .zion {
+      width: 80%; /* Full width for images */
+  }
+}

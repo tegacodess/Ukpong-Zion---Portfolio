@@ -21,7 +21,7 @@
           display: flex; /* Make #myLinks a flex container */
           flex-direction: row;
           justify-content: space-evenly;
-          width:65%;
+          width:45%;
       }
   
       .topnav a,
@@ -53,7 +53,7 @@
       }
 
       .zion{
-          border-radius: 300px;
+          border-radius: 30px;
       }
   
        /* Hero */
@@ -109,6 +109,10 @@
   
      
     /* About */
+    /* #about{
+      display: flex;
+      
+    } */
     #about h2{
       border: 5px solid white;
       padding:40px;
@@ -152,14 +156,16 @@
       justify-content: space-evenly;
     }
 
-    .individual-project{
-      border-radius: 15px;
-    }
-
 
   .flex-768{
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+ 
+  .contact{
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
@@ -175,15 +181,9 @@
     padding: 80px;
   }
 
-  #projects, #skills{
-    padding:70px;
-  }
   #about p{
     margin: 25px 40px;
-    /* margin-left: 40px; */
-  }
-  #skills{
-    flex-direction: row-reverse;
+
   }
 
   
@@ -207,50 +207,8 @@
   
   /* Extra Large Devices (Large desktops, 1200px and upwards */
 
-  @media screen and (min-width:1200px) {
+   @media screen and (min-width:1200px) {
     .zion{
-      border-radius: 400px;
-  }
-  .topnav{
-    padding-right: 8px;
-  }
-
-  .topnav a{
-    font-size: 24px;
-  }
- 
-  .topnav a .contact-btn{
-    padding: 25px 15px;
-  }
-  #myLinks a{
-    font-size: 22px;
-  }
-
-  h1{
-    font-size: 40px;
-  }
-
-
-  .skills-list{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-
-.projects-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-
-.individual-project{
-  border-radius: 15px;
-  width:400px;
-  /* height: 500px; */
-  flex-wrap: wrap;
-  overflow: hidden;
-  gap:20px;
-}
-
-  }
+      border-radius: 50px;
+    }
+  } 

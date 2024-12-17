@@ -31,3 +31,23 @@ function topFunction() {
    document.body.scrollTop = 0; // For Safari
    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.projects-container');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  nextBtn.addEventListener('click', () => {
+      container.scrollBy({
+          left: container.clientWidth, // Scroll by the width of the container
+          behavior: 'smooth'
+      });
+  });
+
+  prevBtn.addEventListener('click', () => {
+      container.scrollBy({
+          left: -container.clientWidth, // Scroll back by the width of the container
+          behavior: 'smooth'
+      });
+  });
+});
